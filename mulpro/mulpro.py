@@ -8,18 +8,18 @@
 import os
 import numpy as np
 import multiprocessing
+
 import time
 
 import logging
 logger = logging.getLogger(__name__)
 
-import log
-from log import log_debug, log_info, log_warning, log_and_raise_error
+#import log
+from mulpro.log import log_debug, log_info, log_warning, log_and_raise_error
 
 WARNING_AFTER_JOB_DURATION_SEC = 30
 
 import traceback, sys
-
 
 import traceback
 run_old = multiprocessing.Process.run
